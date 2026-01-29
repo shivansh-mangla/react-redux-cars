@@ -19,7 +19,7 @@ const carsSlice = createSlice({
             state.cars.push(newCar)
         },
         removeCar: (state, action) => {
-            state.cars.filter(car => car.id !== action.payload)
+            state.cars = state.cars.filter(car => car.id !== action.payload)
         },
     },
 })
